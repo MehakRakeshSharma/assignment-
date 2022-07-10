@@ -1,0 +1,183 @@
+1. Write a program to print Hello Students on the screen. 
+
+ans 1) 
+
+#include<stdio.h>
+int main ()
+{
+printf("Hello students");
+return 0;
+} 
+
+
+
+2. Write a program to print Hello in the first line and Students in the second line.
+
+ans 2)
+
+#include<stdio.h>
+int main ()
+{
+printf("Hello\n Students");
+return 0;
+}
+
+
+
+3. Write a program to print “MySirG” on the screen. (Remember to print in double quotes)
+
+ans 3)
+
+#include<stdio.h>
+int main ()
+{
+printf (" \" MySirG \" ");
+return 0;
+}
+
+
+ 4. WAP to find the area of the circle. Take radius of circle from user as input and print the  result in below given format. 
+Expected output format – “Area of circle is A having the radius R”. Replace A with area  & R with radius. 
+
+
+ans 4)
+
+#include<stdio.h>
+int main ()
+{
+float R,A,pi=3.47;
+printf ("enter the radius of the circle\n");
+scanf ("%f ",&R);
+A=pi*R*R;
+printf ("\n The area of circle is %f having the radius %f",A,R);
+return 0;
+}
+
+
+5. WAP to calculate the length of String using printf function. 
+
+ans 5)
+
+#include<stdio.h>
+int main ()
+{
+char A[100];
+int length;
+printf("enter any string");
+scanf ("%s", &A);
+printf (" the length of the string is %ld", strlen(A));
+return 0;
+}
+
+
+6. WAP to print the name of the user in double quotes. 
+Expected output format – “Hello , Amit Kumar” 
+
+
+ans 6)
+
+#include<stdio.h>
+int main ()
+{
+
+char name[1000];
+system("cls");
+printf ("enter your name\n");
+scanf ("%s",&name);
+printf (" \n\" Hello  , %s\"",name);
+return 0;
+}
+
+
+7. WAP to print “%d” on the screen.
+
+#include<stdio.h>
+int main ()
+{
+char sym='%';
+printf ("\"%cd\"",sym);
+return 0;
+}
+
+
+8. WAP to print “\n” on the screen. 
+
+#include<stdio.h>
+int main ()
+{
+char b='\';
+printf ("\"%cn\"",b);
+return 0;
+}  
+//////////////////////////////////////////////////////////// the upper one didn't worked !!
+
+#include<stdio.h>
+int main ()
+{
+printf ("\"\\");
+printf ("n\"");
+return 0;
+}
+
+
+9. WAP to print “\\” on the screen. 
+
+#include<stdio.h>
+int main ()
+{
+printf ("\"\\\\\"");
+return 0;
+}
+
+10. WAP to take date as an input in below given format and convert the date format and  display the result as given below. 
+User Input date format – “DD/MM/YYYY” (27/11/2022) 
+Output format – 
+“Day – DD , Month – MM , Year – YYYY” (Day – 27 ,Month – 07 , Year – 2022) 
+
+ans 10)
+
+#include<stdio.h>
+int main ()
+{
+int DD,MM,YYYY;
+
+printf (" Enter the date/month/year ");
+scanf ("\" %d/%d/%d\"", &DD,&MM,&YYYY);
+printf ("\" the date you had written is Day - %d , Month - %d , Year - %d\"",DD,MM,YYYY);
+return 0;
+}
+
+
+11. WAP to take time as an input in below given format and convert the time format and  display the result as given below. 
+User Input date format – “HH:MM” 
+Output format – “HH hour and MM Minute” 
+Example – 
+“11:25” converted to “11 Hour and 25 Minute” 
+
+
+ans 11)
+
+#include<stdio.h>
+int main ()
+{
+
+int HH,MM;
+printf ("input the time HH : MM ");
+scanf ("\"%d:%d\", &HH,&MM);
+printf ( "\"%d hour and %d Minute\"", HH,MM);
+return 0;
+}
+
+
+12. Find output of below code: 
+int main() 
+{  
+int x = printf(“ineuron”); 
+printf(“%d”,x); 
+return 0; 
+}
+
+ans 12) 
+
+error
+integer variable can only store an integer value. we cannot assign anything else in it.
